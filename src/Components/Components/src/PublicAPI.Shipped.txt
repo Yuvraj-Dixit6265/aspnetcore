@@ -486,8 +486,6 @@ Microsoft.AspNetCore.Components.Routing.Router.NotFound.get -> Microsoft.AspNetC
 Microsoft.AspNetCore.Components.Routing.Router.NotFound.set -> void
 Microsoft.AspNetCore.Components.Routing.Router.OnNavigateAsync.get -> Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.Routing.NavigationContext!>
 Microsoft.AspNetCore.Components.Routing.Router.OnNavigateAsync.set -> void
-Microsoft.AspNetCore.Components.Routing.Router.PreferExactMatches.get -> bool
-Microsoft.AspNetCore.Components.Routing.Router.PreferExactMatches.set -> void
 Microsoft.AspNetCore.Components.Routing.Router.Router() -> void
 Microsoft.AspNetCore.Components.Routing.Router.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView parameters) -> System.Threading.Tasks.Task!
 Microsoft.AspNetCore.Components.Sections.SectionContent
