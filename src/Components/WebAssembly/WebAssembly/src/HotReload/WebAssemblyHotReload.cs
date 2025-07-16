@@ -133,17 +133,6 @@ public static partial class WebAssemblyHotReload
     /// <summary>
     /// For framework use only.
     /// </summary>
-    [Obsolete("Use ApplyHotReloadDeltas instead")]
-    [JSInvokable(nameof(ApplyHotReloadDelta))]
-    public static void ApplyHotReloadDelta(string moduleIdString, byte[] metadataDelta, byte[] ilDelta, byte[] pdbBytes, int[]? updatedTypes)
-    {
-        GetAgent()?.ApplyDeltas(
-            [new UpdateDelta(Guid.Parse(moduleIdString, CultureInfo.InvariantCulture), metadataDelta, ilDelta, pdbBytes, updatedTypes ?? [])]);
-    }
-
-    /// <summary>
-    /// For framework use only.
-    /// </summary>
     [JSInvokable(nameof(ApplyHotReloadDeltas))]
     public static LogEntry[] ApplyHotReloadDeltas(Delta[] deltas, int loggingLevel)
     {
